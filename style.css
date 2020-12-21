@@ -143,6 +143,7 @@ main {
     justify-content: flex-start;
     width: 100%;
     text-decoration: none;
+    color: var(--black);
 }
 
 .shop-now a:hover {
