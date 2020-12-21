@@ -219,7 +219,7 @@ main {
         position: absolute;
         background-color: var(--black);
         bottom: 0;
-        right: -17.55%;
+        right: -15%;
         display: flex;
         align-items: center;
         align-content: center;
