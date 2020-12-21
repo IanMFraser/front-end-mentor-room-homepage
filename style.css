@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+:root {
+    --dark-gray:hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    color: var(--black);
+    font-size: 12px;
+    width: 100vw;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 .5rem;
+}
+
+p {
+    margin: 1em 0em;
+    color:var(--dark-gray);
+    line-height: 20px;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3rem 1rem;
+    width: 100vw;
+    z-index: 2;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+}
+
+.navigation {
+    display: none;
+    font-weight: 700;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: var(--very-dark-gray);
+    z-index: 1;
+    opacity: 0.75;
+}
+
+.navigation li:hover {
+    padding-bottom: .25rem;
+    border-bottom: 2px solid var(--black);
+    cursor: pointer;
+}
+
+.hero-img {
+    background-image: url('images/mobile-image-hero-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+}
+
+.img-arrows {
+    position: absolute;
+    background-color: var(--black);
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-arrow {
+    padding: 1rem 1.5rem  1rem 1rem;
+}
+
+.img-arrow:hover {
+    background-color: var(--very-dark-gray);
+}
+
+.img-arrow button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.img-arrow img {
+    width: 80%;
+    height: auto;
+}
+
+.hero-text {
+    padding: 4rem 1.25rem 3rem 2rem;
+}
+
+.hero-header {
+    font-size: 1.65rem;
+    font-weight: 700;
+}
+
+.hero-paragraph {
+    margin: 1rem 0;
+}
+
+.shop-now {
+    font-size: .5rem;
+    font-weight: 500;
+    letter-spacing: 1.25em;
+    margin: 4rem 1rem 1rem 0rem;
+}
+
+.shop-now a {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    text-decoration: none;
+}
+
+.shop-now a:hover {
+    color: var(--dark-gray);
+}
+
+.shop-now img {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    padding: 4rem 1.25rem 3rem 2rem;
+}
+
+.about-img1 img{
+    width: 100%;
+    height: auto;
+}
+
+.about-img2 img{
+    width: 100%;
+    height: auto;
+}
+
+.about-header {
+    letter-spacing: .55em;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+@media only screen and (min-width: 750px ){
+     
+    .navbar {
+        justify-content: flex-start;
+        padding: 4rem .5rem;
+    }
+    
+    .logo {
+        margin: 0 2rem 0 4rem;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .navigation {
+        display: flex;
+        color:var(--white);
+    }
+
+    .navigation li {
+        margin: 0 1rem;
+    }
+
+    .navigation li:hover {
+        margin: 0 1rem;
+        padding-bottom: .5rem;
+        border-bottom: 2px solid var(--white);
+    }
+    
+    .hero {
+        display: flex;
+        height: 69.5vh;
+    }
+
+    .hero-img {
+        width: 58.5vw;
+        height: 100%;
+    }
+    
+    .img-arrows {
+        position: absolute;
+        background-color: var(--black);
+        bottom: 0;
+        right: -17.55%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+    
+    .img-arrow {
+        padding: 1.75em 2.25em;
+    }
+    
+    .img-arrow button {
+        background: none;
+        border: none;
+    }
+    
+    .img-arrow img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero-text {
+        padding: 6rem 6rem 3rem 5rem;
+        width: 40vw;
+    }
+    
+    .hero-header {
+        font-size: 2rem;
+    }
+    
+    .hero-paragraph {
+        margin: 2rem 0;
+    }
+    
+    .shop-now {
+        margin: 2rem 1rem 2rem 0rem;
+    }
+    
+    .about {
+        display: flex;
+        height: 35vh;
+    }
+
+    .about-text{
+        width: 45%;
+    }
+
+    .about-img1 {
+        width: 32%;
+    }
+
+    .about-img1 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-img2 {
+        width: 32%;
+    }
+
+    .about-img2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
